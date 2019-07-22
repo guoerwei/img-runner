@@ -1,0 +1,17 @@
+{
+  "params": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "title": "id",
+        "type": "integer",
+        "exclusiveMinimum": 0
+      }
+    },
+    "errorMessage": {
+      "properties": {
+        "id": "id不正确"
+      }
+    }
+  }
+}

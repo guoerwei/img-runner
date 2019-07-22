@@ -1,0 +1,34 @@
+{
+  "params": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "title": "id",
+        "type": "integer",
+        "exclusiveMinimum": 0
+      }
+    },
+    "errorMessage": {
+      "properties": {
+        "id": "id不正确"
+      }
+    }
+  },
+  "body": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "名称",
+        "type": "string"
+      }
+    },
+    "required": [
+      "name"
+    ],
+    "errorMessage": {
+      "required": {
+        "name": "缺少专辑名称"
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "query": {
+    "type": "object",
+    "properties": {
+      "offset": {
+        "title": "分页位置",
+        "type": "integer",
+        "minimum": 0,
+        "default": 0
+      },
+      "limit": {
+        "title": "读取数量",
+        "type": "integer",
+        "exclusiveMinimum": 0,
+        "default": 20
+      },
+      "name": {
+        "title": "专辑名",
+        "type": "string",
+        "default": ""
+      }
+    },
+    "errorMessage": {
+      "properties": {
+        "offset": "分页位置必须大于0",
+        "limit": "读取数量必须大于0",
+        "name": "专辑名不正确"
+      }
+    }
+  }
+}

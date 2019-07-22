@@ -1,0 +1,25 @@
+{
+  "query": {
+    "type": "object",
+    "properties": {
+      "limit": {
+        "title": "读取数量",
+        "type": "integer",
+        "exclusiveMinimum": 0,
+        "default": 0
+      },
+      "last": {
+        "title": "分页获取时的标识位",
+        "description": "当前列表页的最后一个id，接下去获取<这个id的数据，这样不会重复",
+        "type": "integer",
+        "default": 0
+      }
+    },
+    "errorMessage": {
+      "properties": {
+        "limit": "读取数量必须大于0",
+        "last": "分页标识不正确"
+      }
+    }
+  }
+}

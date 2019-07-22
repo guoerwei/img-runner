@@ -1,0 +1,42 @@
+{
+  "params": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "title": "id",
+        "type": "integer",
+        "exclusiveMinimum": 0
+      }
+    },
+    "errorMessage": {
+      "properties": {
+        "id": "id必须大于0"
+      }
+    }
+  },
+  "body": {
+    "type": "object",
+    "properties": {
+      "imageIds": {
+        "title": "图片的id列表",
+        "type": "array",
+        "items": {
+          "type": "integer",
+          "exclusiveMinimum": 0
+        },
+        "minItems": 1
+      }
+    },
+    "required": [
+      "imageIds"
+    ],
+    "errorMessage": {
+      "required": {
+        "imageIds": "需要选择图片移出专辑"
+      },
+      "properties": {
+        "imageIds": "需要选择图片移出专辑"
+      }
+    }
+  }
+}

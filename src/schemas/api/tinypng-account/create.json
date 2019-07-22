@@ -1,0 +1,38 @@
+{
+  "body": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "名称",
+        "type": "string",
+        "minLength": 1
+      },
+      "key": {
+        "title": "key",
+        "type": "string",
+        "minLength": 1
+      },
+      "monthlyLimit": {
+        "title": "每月次数限制",
+        "type": "integer",
+        "minimum": 0,
+        "default": 0
+      }
+    },
+    "required": [
+      "name",
+      "key"
+    ],
+    "errorMessage": {
+      "required": {
+        "name": "缺少名称",
+        "key": "缺少key"
+      },
+      "properties": {
+        "name": "名称不正确",
+        "key": "key不正确",
+        "monthlyLimit": "每月次数限制不正确"
+      }
+    }
+  }
+}

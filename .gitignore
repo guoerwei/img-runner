@@ -1,0 +1,14 @@
+node_modules
+.DS_Store
+Thumb.db
+.vscode
+.idea/
+.svn/
+CVS
+*.swp
+npm-debug.log
+yarn-error.log
+
+/storage/
+.private-oss.json
+/pdata

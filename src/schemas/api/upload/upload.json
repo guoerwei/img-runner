@@ -1,0 +1,85 @@
+{
+  "body": {
+    "type": "object",
+    "properties": {
+      "config": {
+        "type": "object",
+        "title": "使用配置",
+        "properties": {
+          "optimizationLevel": {
+            "type": "integer",
+            "enum": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "default": 3
+          }
+        },
+        "errorMessage": {
+          "properties": {
+            "optimizationLevel": "压缩等级不正确"
+          }
+        }
+      }
+    },
+    "required": [
+      "config"
+    ],
+    "errorMessage": {
+      "required": {
+        "config": "缺少有效的配置"
+      },
+      "properties": {
+        "config": "压缩配置不正确"
+      }
+    }
+  },
+  "files": {
+    "type": "object",
+    "properties": {
+      "file": {
+        "type": "object",
+        "title": "上传的文件",
+        "properties": {
+          "size": {
+            "type": "integer",
+            "title": "图片大小",
+            "minimum": 0,
+            "maximum": 5242880
+          },
+          "type": {
+            "type": "string",
+            "title": "图片格式",
+            "enum": [
+              "image/png",
+              "image/jpeg",
+              "image/gif",
+              "image/webp",
+              "image/svg+xml"
+            ]
+          }
+        },
+        "errorMessage": {
+          "properties": {
+            "size": "图片的大小在5M以内",
+            "type": "所支持的图片格式为png, jpg, gif, webp, svg"
+          }
+        }
+      }
+    },
+    "required": [
+      "file"
+    ],
+    "errorMessage": {
+      "required": {
+        "file": "图片没有上传"
+      },
+      "properties": {
+        "file": "上传的图片不正确"
+      }
+    }
+  }
+}

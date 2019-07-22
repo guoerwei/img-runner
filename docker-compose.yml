@@ -1,0 +1,28 @@
+version: "3.1"
+
+services:
+  mysql:
+    image: mysql:8
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: "img_runner"
+    volumes:
+      - ./pdata/mysql:/var/lib/mysql
+    ports:
+      - "3307:3306"
+
+  redis:
+    image: redis:5
+    command: redis-server
+    volumes:
+      - ./pdata/redis:/data
+    ports:
+      - "6380:6379"
+
+  img-runner:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - ./pdata/img-runner:/home/node/img-runner/storage

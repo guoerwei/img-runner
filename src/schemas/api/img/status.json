@@ -1,0 +1,28 @@
+{
+  "query": {
+    "type": "object",
+    "properties": {
+      "imageIds": {
+        "type": "array",
+        "title": "查询文件",
+        "items": {
+          "type": "integer",
+          "exclusiveMinimum": 0
+        },
+        "miniItems": 1,
+        "uniqueItems": true
+      }
+    },
+    "required": [
+      "imageIds"
+    ],
+    "errorMessage": {
+      "required": {
+        "imageIds": "缺少查询的图片"
+      },
+      "properties": {
+        "imageIds": "查询参数不正确"
+      }
+    }
+  }
+}

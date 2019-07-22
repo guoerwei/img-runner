@@ -1,0 +1,59 @@
+{
+  "name": "img-runner",
+  "version": "1.0.0",
+  "description": "图片压缩上传项目的试验版本-后端部分",
+  "engines": {
+    "node": ">=10.3.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./",
+    "start": "export APP_ENV=local && nodemon ./app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "advpng-bin": "^3.0.0",
+    "ajv": "^6.10.0",
+    "ajv-errors": "^1.0.1",
+    "ali-oss": "^6.1.1",
+    "cwebp-bin": "^5.1.0",
+    "execa": "^2.0.2",
+    "giflossy": "^3.0.41",
+    "gifsicle": "^4.0.1",
+    "guetzli": "^2.0.0",
+    "image-size": "^0.7.4",
+    "ioredis": "^4.11.1",
+    "jpeg-recompress-bin": "^4.0.0",
+    "jpegoptim-bin": "^5.1.0",
+    "jpegtran-bin": "^4.0.0",
+    "koa": "^2.7.0",
+    "koa-body": "^4.1.0",
+    "koa-qs": "^2.0.0",
+    "koa-router": "^7.4.0",
+    "koa-send": "^5.0.0",
+    "make-dir": "^3.0.0",
+    "mozjpeg": "^6.0.1",
+    "mysql2": "^1.6.5",
+    "optipng-bin": "^6.0.0",
+    "pngcrush-bin": "^4.0.0",
+    "pngout-bin": "^4.0.0",
+    "pngquant-bin": "^5.0.2",
+    "pug": "^2.0.4",
+    "sequelize": "^5.9.2",
+    "sharp": "^0.22.1",
+    "svgo": "^1.2.2",
+    "tempy": "^0.3.0",
+    "tinify": "^1.6.0-beta.2",
+    "zopflipng-bin": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2"
+  }
+}

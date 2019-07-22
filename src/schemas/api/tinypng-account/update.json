@@ -1,0 +1,46 @@
+{
+  "params": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "title": "id",
+        "type": "integer",
+        "exclusiveMinimum": 0
+      }
+    },
+    "errorMessage": {
+      "properties": {
+        "id": "id不正确"
+      }
+    }
+  },
+  "body": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "名称",
+        "type": "string"
+      },
+      "key": {
+        "title": "key",
+        "type": "string"
+      },
+      "monthlyLimit": {
+        "title": "每月次数限制",
+        "type": "integer",
+        "mimimum": 0,
+        "default": 0
+      }
+    },
+    "required": [
+      "name",
+      "key"
+    ],
+    "errorMessage": {
+      "required": {
+        "name": "缺少名称",
+        "key": "缺少key"
+      }
+    }
+  }
+}

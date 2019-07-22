@@ -12,7 +12,7 @@
     "start": "export APP_ENV=local && nodemon ./app.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "advpng-bin": "^3.0.0",
     "ajv": "^6.10.0",

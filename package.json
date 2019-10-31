@@ -41,7 +41,7 @@
     "pngout-bin": "^4.0.0",
     "pngquant-bin": "^5.0.2",
     "pug": "^2.0.4",
-    "sequelize": "^5.9.2",
+    "sequelize": "^5.15.1",
     "sharp": "^0.22.1",
     "svgo": "^1.2.2",
     "tempy": "^0.3.0",

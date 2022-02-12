@@ -15,7 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "advpng-bin": "^3.0.0",
-    "ajv": "^6.10.0",
+    "ajv": "^6.12.3",
     "ajv-errors": "^1.0.1",
     "ali-oss": "^6.1.1",
     "cwebp-bin": "^5.1.0",

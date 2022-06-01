@@ -42,7 +42,7 @@
     "pngquant-bin": "^5.0.2",
     "pug": "^2.0.4",
     "sequelize": "^5.9.2",
-    "sharp": "^0.22.1",
+    "sharp": "^0.30.5",
     "svgo": "^1.2.2",
     "tempy": "^0.3.0",
     "tinify": "^1.6.0-beta.2",
